@@ -27,7 +27,7 @@ export default function ActiveSectionContextProvider({ children }: ActiveSection
     );
 }
 
-export function useActiveSection() {
+export function useActiveSectionContext() {
     const context = useContext(ActiveSectionContext);
 
     if (!context) {
