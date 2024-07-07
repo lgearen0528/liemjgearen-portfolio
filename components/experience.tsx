@@ -5,6 +5,7 @@ import { useSectionInView } from "@/lib/hooks";
 import Timeline from "./timeline";
 
 export default function Experience() {
+    // @ts-ignore TODO: Fix experience section
   const { ref } = useSectionInView("Experience");
 
   return (

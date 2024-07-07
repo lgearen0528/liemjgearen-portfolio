@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeContextProvider } from "@/context/theme-context";
-import ActiveSectionProvider from "@/context/active-section-context";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Toaster from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import ThemeSwitcher from "@/components/theme-switcher";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,9 +17,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}:{
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}>
