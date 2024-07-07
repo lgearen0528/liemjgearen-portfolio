@@ -11,7 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", { threshold: 0.2, triggerOnce: true });
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
