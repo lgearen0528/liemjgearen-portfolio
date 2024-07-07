@@ -44,8 +44,8 @@ export default function About() {
         </ul>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, roasting my own coffee, and tending to my chickens with my family. I also enjoy{" "}
+        <span className="italic">When I'm not coding</span>, I enjoy roasting my own coffee
+        and tending to my chickens with my family. I also enjoy{" "}
         <span className="font-medium">learning new things</span> and continuously improving my skills.
       </p>
       <p>I have also spent over 10 years with the Boy Scouts of America where I have earned my Eagle Scout award and have served in several leadership roles within my troop and within an official Scout Camp staff.</p>
