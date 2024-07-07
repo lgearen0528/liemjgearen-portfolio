@@ -2,6 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { MdDesignServices } from "react-icons/md";
+import { MdOutlineRestartAlt } from "react-icons/md";
 
 export const links = [
   {
@@ -20,10 +22,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-//   {
-//     name: "Experience",
-//     hash: "#experience",
-//   },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
   {
     name: "Contact",
     hash: "#contact",
@@ -52,23 +54,25 @@ export const experiencesData = [
     location: "John Deere Parts Distribution Center, Milan, IL",
     description:
       "I worked on the primary application that John Deere Dealers utilized to order parts from the global supply chain John Deere holds.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(FaReact),
     date: "2021 - 2022",
   },
   {
     title: "Senior Software Engineer - John Deere Agile Tools Team",
     location: "John Deere Digital Strategy & Transformation, Moline, IL",
     description:
-      "SaaS",
-    icon: React.createElement(FaReact),
+      "SaaS Tooling Administration with the following tools: Jira, Mural, TeamRetro, SharePoint. I also implemented several methods of automation using AWS Lambda and REST API calls that were made available by the SaaS products." +
+      "These automations helped enabled John Deere's several hundred software delivery teams to quickly and efficiently use these tools for their project needs while also ensuring proper cost savings to the enterprise.",
+    icon: React.createElement(MdDesignServices),
     date: "2022 - 2024",
   },
   {
     title: "Senior Software Engineer - John Deere Developer Advocacy Team",
     location: "John Deere Digital Strategy & Transformation, Moline, IL",
     description:
-      "Innovation and Coaching",
-    icon: React.createElement(FaReact),
+      "The Developer Advocacy team is responsible for shaping and enabling the future of the digital product teams within John Deere. I helped enable our digital ecosystem to collect data using GitHub APIs and visualize it so teams would be enabled to make data-driven decisions on their own software development lifecycle practices." + 
+      "I also coached several divisions of the enterprise on their own software engineering practices, and helped show data to prove where improvements could be made. This includes the team's Lead Time, Cycle Time, Deployment frequencies, Segregation of Duties, and other metrics.",
+    icon: React.createElement(MdOutlineRestartAlt),
     date: "2024 - present",
   },
 ] as const;
