@@ -32,7 +32,7 @@ export default function Timeline({ inView } : { inView: boolean }) {
                   : "0.4rem solid rgba(255, 255, 255, 0.5)",
             }}
             date={item.date}
-            icon={item.icon}
+            // icon={item.i  con || null}
             iconStyle={{
               background:
                 theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
