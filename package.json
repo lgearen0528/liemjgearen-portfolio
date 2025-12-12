@@ -11,7 +11,7 @@
     "check": "biome check --write ."
   },
   "dependencies": {
-    "@react-email/components": "^0.0.21",
+    "@react-email/components": "^1.0.1",
     "@react-email/tailwind": "^0.0.18",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.4.22",
