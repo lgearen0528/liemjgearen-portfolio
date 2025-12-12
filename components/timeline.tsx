@@ -1,16 +1,17 @@
-import { useTheme } from "@/context/theme-context";
-import { experiencesData } from "@/lib/data";
-import React from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import React from "react"
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component"
+import { useTheme } from "@/context/theme-context"
+import { experiencesData } from "@/lib/data"
+import "react-vertical-timeline-component/style.min.css"
 
+export default function Timeline({ inView }: { inView: boolean }) {
+  const { theme } = useTheme()
 
-export default function Timeline({ inView } : { inView: boolean }) {
-  const { theme } = useTheme();
-
-    return (
-
-      <VerticalTimeline lineColor="">
+  return (
+    <VerticalTimeline lineColor="">
       {experiencesData.map((item, index) => (
         <React.Fragment key={index}>
           <VerticalTimelineElement
@@ -41,13 +42,13 @@ export default function Timeline({ inView } : { inView: boolean }) {
             }}
           >
             <h3 className="font-semibold capitalize">{item.title}</h3>
-            <p className="font-normal !mt-0 italic underline">{item.location}</p>
-            <p className="!mt-1 font-normal">
-              {item.description}
+            <p className="font-normal !mt-0 italic underline">
+              {item.location}
             </p>
+            <p className="!mt-1 font-normal">{item.description}</p>
           </VerticalTimelineElement>
         </React.Fragment>
       ))}
     </VerticalTimeline>
-    )
+  )
 }

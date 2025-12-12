@@ -1,18 +1,20 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { motion } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
+import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { FaGithubSquare } from "react-icons/fa"
+import { HiDownload } from "react-icons/hi"
+import { useActiveSectionContext } from "@/context/active-section-context"
+import { useSectionInView } from "@/lib/hooks"
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", { threshold: 0.2, triggerOnce: true });
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { ref } = useSectionInView("Home", {
+    threshold: 0.2,
+    triggerOnce: true,
+  })
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section
@@ -67,8 +69,8 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
+            setActiveSection("Contact")
+            setTimeOfLastClick(Date.now())
           }}
         >
           Contact me here{" "}
@@ -101,5 +103,5 @@ export default function Intro() {
         </Link>
       </motion.div>
     </section>
-  );
+  )
 }
