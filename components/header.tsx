@@ -1,13 +1,14 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { links } from "@/lib/data";
-import Link from "next/link";
-import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import clsx from "clsx"
+import { motion } from "framer-motion"
+import Link from "next/link"
+import { useActiveSectionContext } from "@/context/active-section-context"
+import { links } from "@/lib/data"
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext()
 
   return (
     <header className="z-[999] relative">
@@ -32,12 +33,12 @@ export default function Header() {
                   {
                     "text-gray-950 dark:text-gray-200":
                       activeSection === link.name,
-                  }
+                  },
                 )}
                 href={link.hash}
                 onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
+                  setActiveSection(link.name)
+                  setTimeOfLastClick(Date.now())
                 }}
               >
                 {link.name}
@@ -59,5 +60,5 @@ export default function Header() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }

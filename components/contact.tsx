@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import SectionHeader from "./section-header";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/send-email";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
-import { useState } from "react";
+import { motion } from "framer-motion"
+import { useState } from "react"
+import toast from "react-hot-toast"
+import { sendEmail } from "@/actions/send-email"
+import { useSectionInView } from "@/lib/hooks"
+import SectionHeader from "./section-header"
+import SubmitBtn from "./submit-btn"
 
 interface StateType {
-  email: string | undefined;
-  message: string | undefined;
+  email: string | undefined
+  message: string | undefined
 }
 
 const initialState: StateType = {
@@ -19,8 +19,8 @@ const initialState: StateType = {
 }
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
-  const [state, setState] = useState(initialState);
+  const { ref } = useSectionInView("Contact")
+  const [state, setState] = useState(initialState)
 
   return (
     <motion.section
@@ -53,16 +53,16 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          const { data, error } = await sendEmail(formData)
 
           if (error) {
-            toast.error(error);
-            return;
+            toast.error(error)
+            return
           }
 
-          toast.success("Email sent successfully!");
+          toast.success("Email sent successfully!")
 
-          setState(initialState);
+          setState(initialState)
         }}
       >
         <input
@@ -87,5 +87,5 @@ export default function Contact() {
         <SubmitBtn />
       </form>
     </motion.section>
-  );
+  )
 }
