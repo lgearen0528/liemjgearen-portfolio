@@ -53,8 +53,13 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Liem Gearen.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">9 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span> and helping coach Software Engineers on best practices. My expertise includes:<br/>
-        <span className="underline">React (Next.js), NodeJS, Terraform, and Prompt Engineering</span>.
+        building <span className="italic">sites & apps</span> and helping coach
+        Software Engineers on best practices. My expertise includes:
+        <br />
+        <span className="underline">
+          React (Next.js), NodeJS, Terraform, and Prompt Engineering
+        </span>
+        .
       </motion.h1>
 
       <motion.div

@@ -72,7 +72,7 @@ export const experiencesData = [
     location: "John Deere Digital Strategy & Transformation, Moline, IL",
     description:
       "The Developer Advocacy team is responsible for shaping and enabling the future of the digital product teams within John Deere. I helped enable our digital ecosystem to collect data using GitHub APIs and visualize it so teams would be enabled to make data-driven decisions on their own software development lifecycle practices." +
-      "I also coached several divisions of the enterprise on their own software engineering practices, and helped show data to prove where improvements could be made. This includes the team's Lead Time, Cycle Time, Deployment frequencies, Segregation of Duties, and other metrics." + 
+      "I also coached several divisions of the enterprise on their own software engineering practices, and helped show data to prove where improvements could be made. This includes the team's Lead Time, Cycle Time, Deployment frequencies, Segregation of Duties, and other metrics." +
       "Serving as an Advocate for Software Engineering practices include: Generative AI, Security practices for Enterprise, TDD, and SDLC Constraint identification and resolution.",
     icon: React.createElement(MdOutlineRestartAlt),
     date: "2024 - present",
