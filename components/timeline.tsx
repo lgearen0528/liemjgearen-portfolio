@@ -12,8 +12,8 @@ export default function Timeline({ inView }: { inView: boolean }) {
 
   return (
     <VerticalTimeline lineColor="">
-      {experiencesData.map((item, index) => (
-        <React.Fragment key={index}>
+      {experiencesData.map((item) => (
+        <React.Fragment key={item.title}>
           <VerticalTimelineElement
             visible={inView}
             className="vertical-timeline-element--work"

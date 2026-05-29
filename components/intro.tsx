@@ -37,7 +37,7 @@ export default function Intro() {
               alt="Liem portrait"
               width="192"
               height="192"
-              quality="95"
+              quality={95}
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
@@ -52,9 +52,14 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Liem Gearen.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">9 years</span> of experience. I enjoy
+        building <span className="italic">sites & apps</span> and helping coach
+        Software Engineers on best practices. My expertise includes:
+        <br />
+        <span className="underline">
+          React (Next.js), NodeJS, Terraform, and Prompt Engineering
+        </span>
+        .
       </motion.h1>
 
       <motion.div

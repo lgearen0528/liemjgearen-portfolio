@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/theme.css";
+@import "tailwindcss/preflight.css";
+@import "tailwindcss/utilities.css";
 
 html {
   --line-color: #e5e7eb;
@@ -11,5 +11,7 @@ html.dark {
 }
 
 .borderBlack {
-  @apply border border-black/10;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0 0 0 / 0.1);
 }
