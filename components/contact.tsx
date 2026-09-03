@@ -65,6 +65,7 @@ export default function Contact() {
           setState(initialState)
         }}
       >
+        <input name="cf-turnstile-response" type="hidden" value="" readOnly />
         <input
           value={state.email}
           onChange={(e) => setState({ ...state, email: e.target.value })}
